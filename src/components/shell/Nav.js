@@ -51,8 +51,9 @@ export default class Nav extends React.Component {
         const urlw = this.props.match ? this.props.match.url : ''
         const w = url.getUrlMap(urlw)
         const g = item2Group_Map[w.entity]
-        let footer
 
+        /*
+        let footer
         let menus = []
         if(g==='designer'){
             menus = [sections.designer]
@@ -64,6 +65,10 @@ export default class Nav extends React.Component {
             menus = []
             footer = <Link to="/demo">Demo Apps</Link>
         }
+        */
+
+        let menus = [sections.pmsmp, sections.andi];
+        let footer = <a href="https://andi.beta.gouv.fr">Landing Page ANDi</a>
 
         const Section = (section) => (
             <li className={ section.id===g ? 'active-li':''} key={section.id}>
@@ -86,6 +91,7 @@ export default class Nav extends React.Component {
                     {menus.map(Section)}
                 </ul>
                 <div className="footLinks">
+                    <h3>Autres liens:</h3>
                     {footer}
                 </div>
                 

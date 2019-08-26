@@ -1,9 +1,25 @@
 
 module.exports = [
     {
+        id: 'pmsmp',
+        title: 'Données Internes PMSMP',
+        icon: 'book',
+        menus: [
+            {id: 'user', text: 'Inscriptions'}
+        ],
+    },
+    {
+        id: 'andi',
+        title: 'Données ANDi',
+        icon: 'floppy-disk',
+        menus: [
+            {id: 'asset', text:'Contenus'}
+        ],
+    },/*
+    {
         id: 'pim',
         title: 'Personal Information Manager',
-        icon: 'leaf',
+        icon: 'user-group',
         menus: [
             {id: 'contact', text: 'Address book'},
             {id: 'todo', text: 'Tasks'},
@@ -22,7 +38,7 @@ module.exports = [
             {id: 'album', text: 'Albums', defaultViewMany: 'cards'},
             {id: 'track', text: 'Tracks'},
         ],
-    },/*
+    },
     {
         id: 'designer',
         title: 'Designer',
