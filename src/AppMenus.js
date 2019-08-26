@@ -2,7 +2,7 @@
 module.exports = [
     {
         id: 'pmsmp',
-        title: 'Données Internes PMSMP',
+        title: 'Données PMSMP',
         icon: 'book',
         menus: [
             {id: 'user', text: 'Inscriptions'}
