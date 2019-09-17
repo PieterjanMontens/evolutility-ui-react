@@ -1,7 +1,7 @@
-src/models
 src/models/*
 node_modules
 bower_components
+src/models
 
 build/
 

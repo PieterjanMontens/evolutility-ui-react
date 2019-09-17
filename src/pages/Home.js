@@ -25,10 +25,13 @@ export default class Home extends React.PureComponent {
             <div className="cSet">
                 
                 <div className="component">
-                    <h2>Données PMSMP</h2> 
-                    <p>Données propres à l'organisation des PMSMP (inscriptions, utilisateurs, entreprises, ...)</p>
+                    <h2>Données Immersion</h2> 
+                    <p>Données propres à l'organisation des Immersions (inscriptions, utilisateurs, entreprises, ...)</p>
                     <p>Données Accessibles:{' '}
-                        <Link to="/user/list">Inscriptions</Link>
+                        <ul>
+                            <li><Link to="/user/list">Inscriptions</Link></li> 
+                            <li><Link to="/company/list">Entreprises</Link></li>
+                        </ul>
                     </p>
                 </div>
 
