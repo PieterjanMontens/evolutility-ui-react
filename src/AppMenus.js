@@ -10,6 +10,13 @@ module.exports = [
         ],
     },
     {
+        id: 'immersions',
+        title: 'Données Immersions',
+        icon: 'plane',
+        menus: [
+            { id:'jdb_psh', text:'JDB PSH'},
+            { id:'jdb_entreprise', text:'JDB Entreprise'},
+    {
         id: 'andi',
         title: 'Données ANDi',
         icon: 'floppy-disk',
