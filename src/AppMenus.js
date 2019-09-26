@@ -2,7 +2,7 @@
 module.exports = [
     {
         id: 'pmsmp',
-        title: 'Données PMSMP',
+        title: 'Données Profils',
         icon: 'book',
         menus: [
             {id: 'user', text: 'Inscriptions'},
@@ -16,6 +16,8 @@ module.exports = [
         menus: [
             { id:'jdb_psh', text:'JDB PSH'},
             { id:'jdb_entreprise', text:'JDB Entreprise'},
+        ]
+    },
     {
         id: 'andi',
         title: 'Données ANDi',

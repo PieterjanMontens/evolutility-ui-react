@@ -25,8 +25,8 @@ export default class Home extends React.PureComponent {
             <div className="cSet">
                 
                 <div className="component">
-                    <h2>Données Immersion</h2> 
-                    <p>Données propres à l'organisation des Immersions (inscriptions, utilisateurs, entreprises, ...)</p>
+                    <h2>Données Profils</h2> 
+                    <p>Données de profils (inscriptions, utilisateurs, entreprises, ...)</p>
                     <p>Données Accessibles:{' '}
                         <ul>
                             <li><Link to="/user/list">Inscriptions</Link></li> 
@@ -34,6 +34,18 @@ export default class Home extends React.PureComponent {
                         </ul>
                     </p>
                 </div>
+
+                <div className="component">
+                    <h2>Données Immersions</h2> 
+                    <p>Données propres à l'organisation des Immersions</p>
+                    <p>Données Accessibles:{' '}
+                        <ul>
+                            <li><Link to="/jdb_psh/list">Journeaux de bord PSH</Link></li> 
+                            <li><Link to="/jdb_entreprise/list">Journeaux de bord Entreprises</Link></li>
+                        </ul>
+                    </p>
+                </div>
+
 
                 <div className="component">
                     <h2>Données ANDi</h2> 

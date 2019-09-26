@@ -67,7 +67,7 @@ export default class Nav extends React.Component {
         }
         */
 
-        let menus = [sections.pmsmp, sections.andi];
+        let menus = [sections.pmsmp, sections.immersions, sections.andi];
         let footer = <a href="https://andi.beta.gouv.fr">Landing Page ANDi</a>
 
         const Section = (section) => (
