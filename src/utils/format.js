@@ -12,7 +12,7 @@ import moment from 'moment'
 // include locale support for a few chosen countries -- add more as needed
 //import 'moment/locale/en-gb'
 //import 'moment/locale/en-au'
-//import 'moment/locale/fr'
+import 'moment/locale/fr'
 //import 'moment/locale/de'
 //import 'moment/locale/es'
 
@@ -20,6 +20,8 @@ import {filesUrl, locale } from '../config.js'
 import {fieldTypes as ft} from './dico.js'
 
 // Set the locale from the browser -- which may need to be configured
+//moment.locale(locale || window.navigator.userLanguage || window.navigator.language)
+// Force FR locale
 moment.locale(locale || window.navigator.userLanguage || window.navigator.language)
 
 const nullOrUndefined = v => v===null || v===undefined
