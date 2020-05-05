@@ -23,7 +23,8 @@ module.exports = [
         title: 'Données ANDi',
         icon: 'floppy-disk',
         menus: [
-            {id: 'asset', text:'Contenus'}
+            {id: 'asset', text:'Contenus'},
+            {id: 'accueil', text:'ANDi Accueil'},
         ],
     },/*
     {
