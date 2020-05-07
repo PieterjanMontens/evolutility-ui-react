@@ -87,13 +87,25 @@ export default class Field extends React.Component {
 				opts = [createOption(optVal)]
 				f.list = [optVal]
 			}
-			return <select {...usualProps}
-						className="form-control" 
-						value={d || ''}
-					>
-						<option/>
-						{opts}
-					</select>
+            if (f.type===ft.list)
+                {
+                return <select {...usualProps}
+                            className="form-control" 
+                            multiple="true"
+                            value={d || ''}
+                        >
+                            <option/>
+                            {opts}
+                        </select>
+                } else {
+                return <select {...usualProps}
+                            className="form-control" 
+                            value={d || ''}
+                        >
+                            <option/>
+                            {opts}
+                        </select>
+               }
 
 		}else if(f.type===ft.date){
 			return <Datepicker {...usualProps}
